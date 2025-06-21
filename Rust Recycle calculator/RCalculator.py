@@ -1,6 +1,4 @@
 import time
-def multiply(self, a, b):
-        return a * b
 
 class Item_Values:
     values = {
@@ -20,6 +18,7 @@ class Item_Values:
     'ROPE': {'Cloth': 15},
     'SEWING KIT': {'Cloth': 10, "Rope": 2},
     'TARP': {'Cloth': 50},
+    'FUSE': {'Scrap': 20},
 
     }
 
@@ -52,6 +51,7 @@ for item in items_I_Have:
     if not hm.isdigit():
         print("Please enter a valid number.")
         continue
+            
     if input(f"Do you want to calculate the value of your {item}? (yes/no) ").lower() == 'yes':
         Item_calculator(item, hm)
 print("Thank you for using the Rust Recycle calculator")
