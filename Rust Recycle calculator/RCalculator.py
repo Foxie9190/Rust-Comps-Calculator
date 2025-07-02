@@ -1,4 +1,4 @@
-import time
+
 
 class Item_Values:
     values = {
@@ -38,7 +38,7 @@ class Item_calculator:
            
 
 print("Welcome to the Rust Recycle calculator")
-time.sleep(2)
+
 
 items_I_Have = input("What items do you have? ").split(',')
 if input("Do you have any other Items? ") == 'yes':
